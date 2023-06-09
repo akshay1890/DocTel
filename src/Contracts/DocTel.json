@@ -1,6 +1,6 @@
 {
   "contractName": "DocTel",
-  "abi": [
+  "abi":[
     {
       "anonymous": false,
       "inputs": [
@@ -526,6 +526,25 @@
           "type": "uint256"
         }
       ],
+      "name": "getdocTreatmentGone",
+      "outputs": [
+        {
+          "internalType": "uint256[]",
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_treatment_Id",
+          "type": "uint256"
+        }
+      ],
       "name": "getPrescriptionTreat",
       "outputs": [
         {
@@ -565,25 +584,6 @@
         }
       ],
       "name": "getTreatmentGone",
-      "outputs": [
-        {
-          "internalType": "uint256[]",
-          "name": "",
-          "type": "uint256[]"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "_treatment_Id",
-          "type": "uint256"
-        }
-      ],
-      "name": "getdocTreatmentGone",
       "outputs": [
         {
           "internalType": "uint256[]",
@@ -774,8 +774,8 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xf2fD0eBFA3EaA8492d5Afc533ab658f4a850836F",
-      "transactionHash": "0xaf4692ca66de6055d5cd14f0857294319a396065a69f9102538ec8794dbc1b4a"
+      "address": "0x4178eBDC368af9a0964B6A0119468f878146dd61",
+      "transactionHash": "0x6dbbdb0685f81963defc54f27399f08c53594118b0d277d7c949fd5e5466a08f"
     }
   }
 }

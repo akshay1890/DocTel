@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 pragma experimental ABIEncoderV2;
 
@@ -66,12 +67,12 @@ contract DocTel{
     event ReportAddedTreat(uint indexed treatId, string report,  uint times);
 
     modifier onlyAdmin() {
-        require(adminAddrs[msg.sender].adminAddr != address(0x0),"Not Admin");
+        require(adminAddrs[msg.sender].adminAddr != address(0x0),"Not Doctor");
         _;
     }
 
     modifier onlyDoctor() {
-        require(doctorAddrs[msg.sender].doctorAddress != address(0x0),"Not Admin");
+        require(doctorAddrs[msg.sender].doctorAddress != address(0x0),"Nither Admin / not doctor");
         _;
     }
 
@@ -152,7 +153,7 @@ contract DocTel{
             adminAddrs[_adminAddr] = adm;
         }   
         else {
-            Admin memory adm;
+            Admin memory adm=adminAadhars[_adminAadhar];
             adm.adminAadhar = _adminAadhar;
             adm.adminAddr = _adminAddr;
             adm.role = _role;

@@ -28,7 +28,7 @@ class Header extends Component {
         <Navbar dark expand="md">
           <div className="container justify-center">
             <NavbarToggler onClick={this.togglenav} />
-            <NavbarBrand className="mr-auto">DOCTEL</NavbarBrand>
+            <NavbarBrand className="mr-auto">Acropolis</NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
               <Nav navbar>
                 <NavItem>
@@ -69,7 +69,7 @@ class Header extends Component {
               </Nav>
               <p
                 className="right-align"
-                style={{ float: "right", color: "white" }}
+                style={{ float: "left", color: "green" }}
               >
                 {localStorage.getItem("myAadhar") != 0
                   ? `Logged in: ${localStorage.getItem("myAadhar")}`
